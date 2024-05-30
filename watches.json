@@ -9,7 +9,7 @@
         "linkTitle": "Brands"
       },
       {
-        "linkTitle": "Contact us"
+        "linkTitle": "Contact Us"
       }
     ],
     "showSignupButton": true
@@ -34,7 +34,7 @@
     {
       "heading": "Elegant Timepieces",
       "subHeading": "Choose Luxury, Choose Us",
-      "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship - Watch",
+      "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship - watch",
       "price": "$529.00",
       "media": "images/rolexgreen.png",
       "gradient": ["#30A357", "#75E39A"]
