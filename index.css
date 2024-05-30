@@ -1,4 +1,4 @@
-
+/* Reset and base styles */
 *,
 *::before,
 *::after {
@@ -10,7 +10,6 @@
 ul {
   list-style: none;
 }
-
 
 :root {
   --color-light: #fff;
@@ -46,6 +45,12 @@ button {
   margin: 0px auto;
 }
 
+@media screen and (min-width: 410px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
 @media screen and (min-width: 750px) {
   .container {
     width: var(--container-width-md);
@@ -54,7 +59,7 @@ button {
 
 @media screen and (min-width: 990px) {
   .container {
-    width: var(--container-width-md);
+    width: var(--container-width-xl);
   }
 }
 
@@ -73,19 +78,17 @@ header .container {
 
 nav ul {
   display: flex;
-  gap: 80px;
+  gap: 40px;
   font-weight: 700;
-  font-size: x-large;
+  font-size: large;
 }
 
 .signup-btn {
-  
   padding: 18px 45px 18px 45px;
   background-color: var(--color-dark);
   border-radius: 50px;
   color: var(--color-light);
 }
-
 
 .product-bg-container {
   padding: 20px 0;
@@ -112,6 +115,36 @@ nav ul {
   color: var(--color-light);
 }
 
+@media screen and (min-width: 410px) {
+  .product-bg-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  .product-details-container {
+    margin-top: 50px;
+    max-width: 70%;
+    margin-right: 20px; /* Add a margin to create a gap */
+    margin-bottom: 20px;
+  }
+
+  .product-bg-container h2 {
+    font-size: 3rem;
+  }
+
+  .product-bg-container h3 {
+    font-size: 2rem;
+  }
+
+  .product-bg-container p {
+    font-size: 1.2rem;
+  }
+
+  .product-bg-container .price {
+    font-size: 2.2rem;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .product-bg-container {
     display: flex;
@@ -122,7 +155,7 @@ nav ul {
     margin-top: 100px;
     max-width: 60%;
     margin-right: 20px; /* Add a margin to create a gap */
-    margin-bottom: 20px; /
+    margin-bottom: 20px;
   }
 
   .product-bg-container h2 {
@@ -189,7 +222,6 @@ nav ul {
   align-items: center;
 }
 
-
 .splide-container {
   max-width: 100%;
   display: flex;
@@ -205,12 +237,14 @@ nav ul {
   display: flex;
   justify-content: center;
 }
+
 .splide-img {
   margin-top: 45px;
   width: 80%;
   max-width: 350px;
   max-height: 450px;
 }
+
 #splidePrevBtn,
 #splideNextBtn {
   background-color: transparent;
@@ -219,10 +253,26 @@ nav ul {
   border-radius: 50%;
   padding: 5px;
 }
+
+@media screen and (min-width: 410px) {
+  .splide-container {
+    max-width: 70%;
+  }
+
+  #splide {
+    width: 100%;
+  }
+
+  .splide-img {
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .splide-container {
     max-width: 30%;
   }
+
   #splide {
     width: 100%;
   }
@@ -233,5 +283,7 @@ nav ul {
     max-width: 40%;
   }
 }
+
+
 
 
